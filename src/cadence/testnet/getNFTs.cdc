@@ -1894,6 +1894,7 @@ pub fun getARTIFACT(owner: PublicAccount, id: UInt64): NFTData? {
 
     metadata["editionNumber"] = metadata["artifactEditionNumber"]!
     metadata["editionCount"] = metadata["artifactNumberOfEditions"]!
+    metadata["rarity"] = metadata["artifactRarityLevel"]!
 
     return NFTData(
         contract: contract,
@@ -1948,6 +1949,7 @@ pub fun getARTIFACTPack(owner: PublicAccount, id: UInt64): NFTData? {
 
     metadata["editionNumber"] = nft!.edition.toString()
     metadata["editionCount"] = metadata["numberOfEditions"]!
+    metadata["rarity"] = metadata["artifactRarityLevel"]!
 
     return NFTData(
         contract: contract,
